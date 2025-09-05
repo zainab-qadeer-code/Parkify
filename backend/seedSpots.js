@@ -25,7 +25,7 @@ const spotDocs = parkingData.spots.map((spot) => ({
 // Seed database
 async function seedSpots() {
   try {
-    await mongoose.connect('mongodb+srv://zainabqadeer13:130357Scorpion.@cluster0.u14pv.mongodb.net/parkify?retryWrites=true&w=majority'); // Change DB name if needed
+    await mongoose.connect('your MongoDB public key'); // Change DB name if needed
     console.log('Connected to MongoDB');
 
     await Spot.deleteMany(); // Optional: Clear existing spots
